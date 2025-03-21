@@ -26,12 +26,20 @@ venv\Scripts\activate.ps1
 pip install -r requirements.txt
 ```
 
-- Run the FASTAPI live server
+- Run the FASTAPI live server for the social media app
 ```
-fastapi dev main.py
+fastapi dev social_app/main.py
 ```
 
 
 ### Resources 
 
 - [Python API Development - Comprehensive Course for Beginners](https://www.youtube.com/watch?v=0sOvCWFmrtA)
+- [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
+- [How To Kill Port 8000](https://canonigod.medium.com/how-to-kill-port-8000-c251b0e7017d)
+- [PostgreSQL Data types](https://www.postgresql.org/docs/current/datatype.html)
+
+### Questions 
+- HTTP Status Codes 
+- CORS Issue
+- Authentication in API 
