@@ -43,3 +43,4 @@ fastapi dev social_app/main.py
 - HTTP Status Codes 
 - CORS Issue
 - Authentication in API 
+- Advantages of using an ORM
