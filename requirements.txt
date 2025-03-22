@@ -2,3 +2,5 @@ fastapi[all]
 psycopg[binary]
 SQLAlchemy
 passlib[bcrypt]
+pyjwt
+python-dotenv
