@@ -5,7 +5,7 @@ from fastapi import FastAPI
 # import time 
 from . import models
 from .database import engine
-from .routes import post, user
+from .routes import post, auth, user
 
 
 # Create the tables in the DB for the models defined 
@@ -17,6 +17,7 @@ app = FastAPI()
 
 app.include_router(post.router)
 app.include_router(user.router)
+app.include_router(auth.router)
 
 # Connecting directly to the postgreSQL DB server through the postgreSQL driver for python - psycopg
 # while True:

@@ -1,6 +1,8 @@
 from pydantic import BaseModel, EmailStr
 from datetime import datetime
 
+# Post models
+
 # Schema/Pydantic model - used to define the structure of a response and response
 # Used for validation of data from the request body of the API
 class PostBase(BaseModel):
@@ -21,6 +23,9 @@ class PostResponse(PostBase):
         orm_mode=True
 
 
+
+
+# User models
 class CreateUser(BaseModel):
     email : EmailStr
     password : str
@@ -33,3 +38,9 @@ class UserOutput(BaseModel):
 
     class Config:
         orm_mode = True
+
+
+# Auth models 
+class UserLogin(BaseModel):
+    email : EmailStr
+    password : str
