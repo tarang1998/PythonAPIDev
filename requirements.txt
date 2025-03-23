@@ -4,3 +4,4 @@ SQLAlchemy
 passlib[bcrypt]
 pyjwt
 python-dotenv
+pydantic-settings
