@@ -1,7 +1,6 @@
 from pydantic import BaseModel, EmailStr
 from datetime import datetime
-from typing import Optional
-
+from typing import Optional, Literal
 
 
 # User models
@@ -57,3 +56,17 @@ class PostResponse(PostBase):
 
     class Config:
         orm_mode=True
+
+# class PostOutput(PostResponse):
+
+
+
+
+
+# Vote models 
+
+class Vote(BaseModel):
+    post_id : int
+    direction : Literal[0, 1]
+
+    
