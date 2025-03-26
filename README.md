@@ -1,13 +1,16 @@
 # PythonAPIDev
 
+## Social App API's using FAST API 
 API's for a social media application
 
 ### TechStack Used 
 - Python 
 - [FAST API](https://fastapi.tiangolo.com/tutorial/)
+- Pydantic
+- ORM : SQLAlchemy
+- Alembic
 - Database : PostgreSQL
 - Docker
-- ORM : SQLAlchemy
 
 ### Running the project 
 
@@ -32,15 +35,16 @@ fastapi dev social_app/main.py
 ```
 
 
-### Resources 
+## Resources 
 
 - [Python API Development - Comprehensive Course for Beginners](https://www.youtube.com/watch?v=0sOvCWFmrtA)
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
 - [How To Kill Port 8000](https://canonigod.medium.com/how-to-kill-port-8000-c251b0e7017d)
 - [PostgreSQL Data types](https://www.postgresql.org/docs/current/datatype.html)
 
-### Questions 
+## Questions 
 - HTTP Status Codes 
-- CORS Issue
-- Authentication in API 
-- Advantages of using an ORM
+- What is CORS Issue
+- Authentication in API - using JWT Token
+- Advantages of using an ORM like SQL Alchemy 
+- Using Alembic

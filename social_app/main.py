@@ -8,8 +8,9 @@ from .database import engine
 from .routes import post, auth, user, vote
 
 
-# Create the tables in the DB for the models defined 
-models.Base.metadata.create_all(bind=engine)
+# SqlAlchemy Creates the tables in the DB for the models defined 
+# Using Alembic instead to manage the DB schema
+# models.Base.metadata.create_all(bind=engine)
 
 
 
