@@ -35,7 +35,7 @@ fastapi dev social_app/main.py
 ```
 
 - The postman collection for the API's - [Social App API](./social_app/Social%20App%20-%20FAST%20API.postman_collection.json)
-
+- Postman collection environments : [Dev](./social_app/Dev-%20fastAPISocialAPP.postman_environment.json)
 
 ## Resources 
 
