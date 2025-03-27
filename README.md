@@ -1,6 +1,6 @@
 # PythonAPIDev
 
-## Social App API's using FAST API 
+## Social App API's using FAST API, SQLAlchemy and PostgreSQL
 API's for a social media application
 
 ### TechStack Used 
@@ -33,6 +33,8 @@ pip install -r requirements.txt
 ```
 fastapi dev social_app/main.py
 ```
+
+- The postman collection for the API's - [Social App API](./social_app/Social%20App%20-%20FAST%20API.postman_collection.json)
 
 
 ## Resources 
