@@ -1,6 +1,6 @@
 # PythonAPIDev
 
-## Social App API's using FAST API, SQLAlchemy and PostgreSQL
+## 1> Social App API's using FAST API, SQLAlchemy and PostgreSQL
 API's for a social media application
 
 ### Tech Stack  
@@ -41,7 +41,7 @@ fastapi dev social_app/main.py
 
 
 
-## Fund Manager API's using Flask, SQLAlchemy and PostgreSQL
+## 2> Fund Manager API's using Flask, SQLAlchemy and PostgreSQL
 
 ### Tech Stack 
 - Python
@@ -78,6 +78,23 @@ In the shell run the command : db.create_all()
 flask run --port 8000
 ```
 
+## 3> Flask Tutorial
+
+### Running the project 
+
+- Run the flask application
+```
+cd flask-tutorial
+flask --app flaskr run --debug
+```
+
+- Initialize the Database file 
+```
+flask --app flaskr init-db
+```
+
+
+
 
 
 
@@ -85,6 +102,8 @@ flask run --port 8000
 
 - [Python API Development - Comprehensive Course for Beginners](https://www.youtube.com/watch?v=0sOvCWFmrtA)
 - [Python Flask CRUD API - SQLAlchemy & Postgres](https://www.youtube.com/watch?v=Yh0uwzQ-TrE&t=5703s)
+- [Build APIs with Flask (the right way)](https://www.youtube.com/watch?v=mt-0F_5KvQw)
+- [Flask documentation](https://flask.palletsprojects.com/en/stable/)
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
 - [How To Kill Port 8000](https://canonigod.medium.com/how-to-kill-port-8000-c251b0e7017d)
 - [PostgreSQL Data types](https://www.postgresql.org/docs/current/datatype.html)
