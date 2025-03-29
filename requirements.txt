@@ -1,3 +1,4 @@
+# Social App FAST API
 fastapi[all] 
 psycopg[binary]
 SQLAlchemy
@@ -6,3 +7,10 @@ pyjwt
 python-dotenv
 pydantic-settings
 alembic
+
+
+# Fund Manager
+Flask
+Flask-SQLAlchemy
+psycopg2
+PYJWT 
