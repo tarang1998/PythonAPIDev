@@ -93,7 +93,14 @@ flask --app flaskr run --debug
 flask --app flaskr init-db
 ```
 
+## 4> TODO App
 
+- Run the flask application 
+```
+cd todo-apis
+flask run --port 8000
+
+```
 
 
 
