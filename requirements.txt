@@ -17,3 +17,7 @@ PYJWT
 
 
 flask-smorest
+
+
+validators 
+flask-jwt-extended

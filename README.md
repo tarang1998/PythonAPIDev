@@ -108,8 +108,9 @@ flask run --port 8000
 ## Resources 
 
 - [Python API Development - Comprehensive Course for Beginners](https://www.youtube.com/watch?v=0sOvCWFmrtA)
-- [Python Flask CRUD API - SQLAlchemy & Postgres](https://www.youtube.com/watch?v=Yh0uwzQ-TrE&t=5703s)
+- [Python Flask CRUD API - SQLAlchemy & Postgres](https://www.youtube.com/watch?v=Yh0uwzQ-TrE&t)
 - [Build APIs with Flask (the right way)](https://www.youtube.com/watch?v=mt-0F_5KvQw)
+- [Build and Deploy a Complete REST API with Python Flask Tutorial.](https://www.youtube.com/watch?v=WFzRy8KVcrM&t)
 - [Flask documentation](https://flask.palletsprojects.com/en/stable/)
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
 - [How To Kill Port 8000](https://canonigod.medium.com/how-to-kill-port-8000-c251b0e7017d)
