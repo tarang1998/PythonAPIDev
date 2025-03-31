@@ -51,6 +51,26 @@ class PatientCollection(MethodView):
         return patient_data
 
 
+    @patient.response(status_code=204)
+    @jwt_required()
+    def delete(self):
+        
+        current_user_id = get_jwt_identity()
+
+        patient_data = Patient.query.filter_by(id = current_user_id).first()
+
+        if not patient_data:
+            abort(404, "Patient not found within the system ")
+
+        g.db.delete(patient_data)
+        g.db.commit()
+
+        return
+
+
+
+
+
 
 
 
