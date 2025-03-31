@@ -20,7 +20,7 @@ def generate_tokens(user_id):
     return refresh, access
 
 
-@auth.post('/registerPatient', tags=["Register Patient"])
+@auth.post('/registerPatient', )
 @auth.arguments(RegisterPatient)
 @auth.response(status_code=201,schema=RegisterUserResponse)
 def register(new_patient):
@@ -57,7 +57,7 @@ def register(new_patient):
 
 
 
-@auth.post('/registerDoctor', tags=["Register Doctor"])
+@auth.post('/registerDoctor',)
 @auth.arguments(RegisterDoctor)
 @auth.response(status_code=201,schema=RegisterUserResponse)
 def register(new_doctor):
@@ -96,7 +96,7 @@ def register(new_doctor):
 
 
 
-@auth.post('/login', tags=["Login"])
+@auth.post('/login',)
 @auth.arguments(LoginUser)
 @auth.response(status_code=200,schema=LoginResponse)
 def login(user_data):
@@ -130,7 +130,7 @@ def login(user_data):
         abort(401, description="Incorrect password")
 
  
-@auth.get('/token/refresh', tags=["Refresh Token"])
+@auth.get('/token/refresh', )
 @jwt_required(refresh=True)
 def refresh_users_token():
 

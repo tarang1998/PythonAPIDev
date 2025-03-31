@@ -1,5 +1,4 @@
 from marshmallow import Schema, fields, validates, ValidationError
-import enum 
 import re
 
 def validate_email_format(email):

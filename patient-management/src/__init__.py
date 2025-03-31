@@ -18,6 +18,7 @@ from werkzeug.exceptions import HTTPException
 
 
 from src.auth.auth import auth as auth_blueprint  # Import the auth blueprint
+from src.patient.patient import patient as patient_blueprint
 
 
 def create_app():
@@ -41,7 +42,7 @@ def create_app():
 
     api = Api(app)  # Create an API instance with the Flask app 
     api.register_blueprint(auth_blueprint)
-
+    api.register_blueprint(patient_blueprint)
 
 
     @app.errorhandler(HTTPException)
