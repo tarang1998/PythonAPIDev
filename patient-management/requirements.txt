@@ -3,3 +3,5 @@ flask_sqlalchemy
 psycopg2-binary
 Flask-Migrate
 python-dotenv
+flask-jwt-extended
+flask-smorest
