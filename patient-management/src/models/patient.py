@@ -10,9 +10,9 @@ class Patient(db.Model):
     last_name = db.Column(db.String(100), nullable=False)
     dob = db.Column(db.Date, nullable=False)  # Date of Birth
     # One to many relationship with MedicalHistory, each patient can have multiple medical records
-    medical_history = db.relationship('MedicalHistory', backref='patient', lazy=True)
+    medical_history = db.relationship('MedicalHistory', backref='patient', lazy=True, cascade='all, delete-orphan')
     # One to many relationship with Appointment, each patient can have multiple appointments
-    appointments = db.relationship('Appointment', backref='patient', lazy=True)
+    appointments = db.relationship('Appointment', backref='patient', lazy=True, cascade='all, delete-orphan')
 
 
     def __repr__(self):

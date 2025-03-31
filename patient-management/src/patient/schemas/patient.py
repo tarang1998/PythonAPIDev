@@ -13,3 +13,13 @@ class PatientDataResponse(Schema):
 
    
 
+class UpdatePatientData(Schema):
+    first_name = fields.Str( description="The first name of the patient")
+    last_name = fields.Str( description="The last name of the patient")
+    dob = fields.Date(description="The date of birth of the patient in YYYY-MM-DD format")
+
+class UpdatePatientDataResponse(Schema):
+    email = fields.Email(required=True, description="The email address of the patient")
+    first_name = fields.Str(required=True, description="The first name of the patient")
+    last_name = fields.Str(required=True, description="The last name of the patient")
+    dob = fields.Date(required=True, description="The date of birth of the patient in YYYY-MM-DD format")
