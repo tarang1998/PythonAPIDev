@@ -45,3 +45,12 @@ class PatchPatientMedicalHistory(Schema):
     diagnosis = fields.Str()
     medications = fields.Str()
     allergies = fields.Str()
+
+
+class SearchPatient(Schema):
+    name = fields.Str(required=True)
+    page = fields.Int(required= True)
+    per_page = fields.Int(required= True)
+
+class SearchPatientResponse(Schema):
+    patients = fields.List(fields.Nested(PatientDataResponse), required = True)

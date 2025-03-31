@@ -1,7 +1,7 @@
 from flask_smorest import Blueprint
 from flask.views import MethodView
 from flask_jwt_extended import jwt_required, get_jwt_identity
-from src.patient.schemas.patient import PatchPatientMedicalHistory, PatientDataResponse, UpdatePatientData, UpdatePatientDataResponse, GetPatientMedicalHistoryResponse, PostPatientMedicalHistory, PostPatientMedicalHistoryResponse
+from src.patient.schemas.patient import SearchPatientResponse, SearchPatient,PatchPatientMedicalHistory, PatientDataResponse, UpdatePatientData, UpdatePatientDataResponse, GetPatientMedicalHistoryResponse, PostPatientMedicalHistory, PostPatientMedicalHistoryResponse
 from src.models.patient import Patient
 from src.models.medical_history import MedicalHistory
 from flask import abort,g 
@@ -68,6 +68,24 @@ class PatientCollection(MethodView):
 
         return
 
+
+@patient.get('/search')
+@patient.arguments(SearchPatient, location="query")
+@patient.response(status_code=200, schema = SearchPatientResponse)
+@jwt_required()
+def search_patient(params):
+
+    current_user_id = get_jwt_identity()
+
+    patient_data = Patient.query.filter_by(id = current_user_id).first()
+
+    if not patient_data:
+        abort(404, "Patient not found within the system ")
+
+    patients_query = Patient.query.filter(Patient.first_name.ilike(f'%{params["name"]}%'))
+    patients_paginated = patients_query.paginate(page=params["page"], per_page=params["per_page"], error_out=False)
+    
+    return {"patients" : patients_paginated}
 
 @patient.route('/medicalHistory', )
 class PatientMedicalHistoryCollection(MethodView):
