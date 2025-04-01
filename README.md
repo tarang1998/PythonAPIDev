@@ -1,6 +1,7 @@
 # PythonAPIDev
 
-## 1> Social App API's using FAST API, SQLAlchemy and PostgreSQL
+## [1> Social App API's using FAST API, SQLAlchemy and PostgreSQL](./social_app/)
+
 API's for a social media application
 
 ### Tech Stack  
@@ -10,7 +11,6 @@ API's for a social media application
 - ORM : SQLAlchemy
 - Alembic
 - Database : PostgreSQL
-- Docker
 
 ### Running the project 
 
@@ -35,13 +35,13 @@ fastapi dev social_app/main.py
 ```
 
 - The postman collection for the API's - [Social App API](./social_app/Social%20App%20-%20FAST%20API.postman_collection.json)
+
 - Postman collection environments : [Dev](./social_app/Dev-%20fastAPISocialAPP.postman_environment.json)
 
 
 
 
-
-## 2> Fund Manager API's using Flask, SQLAlchemy and PostgreSQL
+## [2> Fund Manager API's using Flask, SQLAlchemy and PostgreSQL](./fund_manager/)
 
 ### Tech Stack 
 - Python
@@ -78,7 +78,7 @@ In the shell run the command : db.create_all()
 flask run --port 8000
 ```
 
-## 3> Flask Tutorial
+## [3> Flask Documentation Tutorial](./flask-tutorial/)
 
 ### Running the project 
 
@@ -93,15 +93,27 @@ flask --app flaskr run --debug
 flask --app flaskr init-db
 ```
 
-## 4> TODO App
+## [4> TODO App](./todo-apis/)
 
-- Run the flask application 
+### Running the project 
+
 ```
 cd todo-apis
 flask run --port 8000
 
 ```
 
+## [5> Patient Management System](./patient-management/)
+
+### Running the project 
+
+```
+cd patient-management 
+python3 -m venv venv 
+venv\Scripts\activate.ps1
+pip install -r requirements.txt
+flask run --port 8000
+```
 
 
 
@@ -115,10 +127,3 @@ flask run --port 8000
 - [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status)
 - [How To Kill Port 8000](https://canonigod.medium.com/how-to-kill-port-8000-c251b0e7017d)
 - [PostgreSQL Data types](https://www.postgresql.org/docs/current/datatype.html)
-
-## Questions 
-- HTTP Status Codes 
-- What is CORS Issue
-- Authentication in API - using JWT Token
-- Advantages of using an ORM like SQL Alchemy 
-- Using Alembic
